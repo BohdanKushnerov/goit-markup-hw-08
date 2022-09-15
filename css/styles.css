@@ -104,6 +104,16 @@ body {
 }
 
 /* Sections */
+.visually-hidden {
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+} 
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -170,16 +180,6 @@ body {
 }
 
 /* Portfolio page*/
-.visually-hidden {
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-} 
-
 .buttons-portfolio {
     color: var(--primary-text-color);
     background-color: var(--bcg-secondary-color);
