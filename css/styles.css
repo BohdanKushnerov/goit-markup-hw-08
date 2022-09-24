@@ -139,7 +139,6 @@ p {
 }
 
 .button-primary {
-    display: inline-block;
     padding: 10px 32px;
     border-radius: 4px;
     border: none;
