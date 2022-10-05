@@ -13,6 +13,8 @@
     --icon-envelope-phone: #757575;
     --social-networks: #AFB1B8;
     --bcg-icon-footer: #44454E;
+    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration: 250ms;
 }
 
 body {
@@ -47,6 +49,8 @@ p {
 
 /* header */
 .logo {
+    transition: color var(--transition-duration) var(--transition-timing);
+
     color: var(--logo-black-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -80,6 +84,10 @@ p {
 }
 
 .site-nav .link {
+    position: relative;
+
+    transition: color var(--transition-duration) var(--transition-timing);
+
     display: block;
     padding: 32px 0;
 
@@ -97,6 +105,18 @@ p {
     color: var(--accent-color);
 }
 
+.site-nav .link.current::after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
 .contacts {
     display: flex;
     margin-left: auto;
@@ -107,6 +127,8 @@ p {
 }
 
 .contacts .contacts-link {
+    transition: color var(--transition-duration) var(--transition-timing);
+
     display: flex;
     align-items: center;
     padding: 32px 0;
@@ -160,6 +182,8 @@ p {
 }
 
 .button-primary {
+    transition: background-color var(--transition-duration) var(--transition-timing);
+
     padding: 10px 32px;
     border-radius: 4px;
     border: none;
@@ -178,7 +202,6 @@ p {
 
 .button-primary:hover,
 .button-primary:focus {
-    color: var(--primary-white-color);
     background-color: var(--hover-button);
 }
 
@@ -301,7 +324,9 @@ p {
 }
 
 .team .card {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
     background-color: var(--primary-white-color);
@@ -324,6 +349,9 @@ p {
 }
 
 .soc-network {
+    transition: background-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing);
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -371,6 +399,9 @@ p {
 }
 
 .client-links .link {
+    transition: color var(--transition-duration) var(--transition-timing),
+    border var(--transition-duration) var(--transition-timing);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,14 +413,14 @@ p {
     color: var(--social-networks);
 }
 
-.client-links .icon {
-    fill: currentColor
-}
-
 .client-links .link:hover,
 .client-links .link:focus {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
+}
+
+.client-links .icon {
+    fill: currentColor
 }
 
 /* Footer */
@@ -417,6 +448,8 @@ p {
 }
 
 .footer .contacts-link {
+    transition: color var(--transition-duration) var(--transition-timing);
+
     color: var(--text-footer-address-color);
     text-decoration: none;
 }
@@ -446,8 +479,10 @@ p {
 }
 
 .footer-join-in .soc-network {
-    background-color: var(--bcg-icon-footer);
+    transition: background-color var(--transition-duration) var(--transition-timing);
+
     color: var(--primary-white-color);
+    background-color: var(--bcg-icon-footer);
 }
 
 .footer-join-in .soc-network:hover,
@@ -471,6 +506,10 @@ p {
 }
 
 .buttons-portfolio {
+    transition: background-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
+
     display: block;
     padding: 6px 22px;
     min-width: 73px;
@@ -497,6 +536,8 @@ p {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+
+/* Portfolio projects list*/
 .projects-title {
     margin-bottom: 4px;
 
@@ -529,6 +570,8 @@ p {
 }
 
 .projects-item {
+    transition: box-shadow var(--transition-duration) var(--transition-timing);
+
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
@@ -548,4 +591,31 @@ p {
 .project-link {
     color: var(--primary-text-color);
     text-decoration: none;
+}
+
+.project-link:hover .thumb-text {
+    transform: translateY(0);
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform var(--transition-duration) var(--transition-timing);
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--primary-white-color);
+    background-color: rgba(33, 150, 243, 0.9);;
 }
