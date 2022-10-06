@@ -75,9 +75,12 @@ p {
     align-items: center;
 }
 
+.nav {
+    margin-left: 93px;
+}
+
 .site-nav {
     display: flex;
-    margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
