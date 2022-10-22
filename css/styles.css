@@ -754,7 +754,7 @@ p {
 }
 
 .btn:hover,
-.btn:hover {
+.btn:focus {
     fill: #2196F3;
 }
 
