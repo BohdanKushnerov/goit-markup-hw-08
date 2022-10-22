@@ -537,7 +537,7 @@ p {
     line-height: 1.45;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
 .form-subscribe {
@@ -549,10 +549,18 @@ p {
     padding: 15px 16px;
     min-width: 358px;
 
+    transition: border var(--transition-duration) 
+    var(--transition-timing);
+
+    outline: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+}
+
+.subscribe-input:focus {
+    border: 1px solid var(--accent-color);
 }
 
 .button.secondary {
@@ -755,7 +763,7 @@ p {
 
 .btn:hover,
 .btn:focus {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -772,14 +780,14 @@ p {
     line-height: 23px;
     text-align: center;
 
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .modal-text {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 .form-label {
@@ -803,7 +811,7 @@ p {
 
 .modal-input:focus {
     outline: transparent;
-    border: 1px solid #2196F3;
+    border: 1px solid var(--accent-color);
 }
 
 .modal-svg {
@@ -817,11 +825,11 @@ p {
 }
 
 .modal-input:focus + .modal-svg {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
 .modal-svg:focus {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
 .modal-textarea {
@@ -841,7 +849,7 @@ p {
 
 .modal-textarea:focus {
     outline: transparent;
-    border: 1px solid #2196F3;
+    border: 1px solid var(--accent-color);
 }
 
 .modal-textarea::placeholder {
@@ -862,7 +870,7 @@ p {
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 .icon-checkbox {
@@ -878,15 +886,15 @@ p {
     var(--transition-duration)
     var(--transition-timing);
 
-    border: 2px solid #212121;
+    border: 2px solid var(--primary-text-color);
     border-radius: 2px;
     fill: transparent;
 }
 
 .input-checkbox:checked + .icon-checkbox {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     border-color: transparent;
-    fill: #FFFFFF;
+    fill: var(--primary-white-color);
 }
 
 .form-label.checkbox .form-link {
@@ -895,7 +903,7 @@ p {
     font-size: 14px;
     line-height: 1.71;
     text-decoration-line: underline;
-    color: #2196F3;
+    color: var(--accent-color);
     cursor: pointer;
 }
 
