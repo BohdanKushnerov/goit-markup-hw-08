@@ -89,15 +89,15 @@ p {
   align-items: center;
 }
 
-.header__nav {
+.nav__list {
   display: flex;
 }
 
-.header__nav-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header__nav-link {
+.nav__link {
   position: relative;
 
   transition: color var(--transition-duration) var(--transition-timing);
@@ -113,13 +113,13 @@ p {
   text-decoration: none;
 }
 
-.header__nav-link--current,
-.header__nav-link:hover,
-.header__nav-link:focus {
+.nav__link--current,
+.nav__link:hover,
+.nav__link:focus {
   color: var(--accent-color);
 }
 
-.header__nav-link--current::after {
+.nav__link--current::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -133,16 +133,16 @@ p {
   background-color: var(--accent-color);
 }
 
-.header__contacts {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.header__contacts-item + .header__contacts-item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
-.header__contacts-link {
+.contacts__link {
   transition: color var(--transition-duration) var(--transition-timing);
 
   display: flex;
@@ -157,12 +157,12 @@ p {
   color: var(--secondary-text-color);
 }
 
-.header__contacts-link:hover,
-.header__contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
 }
 
-.header__contacts-icon {
+.contacts__icon {
   margin-right: 10px;
 
   fill: currentColor;
@@ -247,16 +247,16 @@ p {
   margin-bottom: 50px;
 }
 
-.features__list {
+.benefits__list {
   display: flex;
 }
 
-.features__item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
   max-width: 270px;
 }
 
-.features__svg-container {
+.benefits__svg-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,7 +268,7 @@ p {
   background-color: var(--bcg-secondary-color);
 }
 
-.features__sub-title {
+.benefits__sub-title {
   margin-bottom: 10px;
 
   color: var(--primary-text-color);
@@ -278,7 +278,7 @@ p {
   text-transform: uppercase;
 }
 
-.features__text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
@@ -294,24 +294,23 @@ p {
   margin-bottom: 50px;
 }
 
-.activities__icon {
+.app {
   display: flex;
 }
 
-.activities__item:not(:last-child) {
+.app__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.activities__app {
+.app__icon {
   display: block;
 }
 
-/* Label activities*/
-.activities__label {
+.app__label {
   position: relative;
 }
 
-.activities__sub-title {
+.app__sub-title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -332,15 +331,15 @@ p {
 }
 
 /* Our team */
-.team {
+.squad {
   background-color: var(--bcg-secondary-color);
 }
 
-.team__title {
+.squad__title {
   margin-bottom: 50px;
 }
 
-.team__list {
+.team {
   display: flex;
 }
 
@@ -385,17 +384,17 @@ p {
 }
 
 /* Social network */
-.social-links {
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-links__item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.soc-network {
+.social__link {
   transition: background-color var(--transition-duration)
       var(--transition-timing),
     color var(--transition-duration) var(--transition-timing);
@@ -410,34 +409,34 @@ p {
   color: var(--social-networks);
 }
 
-.soc-network:hover,
-.soc-network:focus {
+.social__link:hover,
+.social__link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.soc-network:not(:last-child) {
+.social__link:not(:last-child) {
   margin-right: 10px;
 }
 
-.soc-network__icon {
+.social__icon {
   fill: currentColor;
 }
 
 /* Regular customers */
-.clients__title {
+.clientele__title {
   margin-bottom: 50px;
 }
 
-.clients__list {
+.clients {
   display: flex;
 }
 
-.clients__item-logo:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.logo-client__link {
+.clients__link {
   transition: color var(--transition-duration) var(--transition-timing),
     border var(--transition-duration) var(--transition-timing);
 
@@ -452,13 +451,13 @@ p {
   color: var(--social-networks);
 }
 
-.logo-client__link:hover,
-.logo-client__link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
 
-.logo-client__icon {
+.clients__icon {
   fill: currentColor;
 }
 
@@ -521,7 +520,7 @@ p {
   text-transform: uppercase;
 }
 
-.soc-network--gray-bcg {
+.social__link--gray-bcg {
   transition: background-color var(--transition-duration)
     var(--transition-timing);
 
