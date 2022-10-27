@@ -1,0 +1,36 @@
+.clientele__title {
+  margin-bottom: 50px;
+}
+
+.clients {
+  display: flex;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  transition: color var(--transition-duration) var(--transition-timing),
+    border var(--transition-duration) var(--transition-timing);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--social-networks);
+  border-radius: 4px;
+  color: var(--social-networks);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients__icon {
+  fill: currentColor;
+}

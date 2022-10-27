@@ -1,0 +1,44 @@
+.activities {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.activities__title {
+  margin-bottom: 50px;
+}
+
+.app {
+  display: flex;
+}
+
+.app__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.app__icon {
+  display: block;
+}
+
+.app__label {
+  position: relative;
+}
+
+.app__sub-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  background-color: var(--label-img-section);
+}

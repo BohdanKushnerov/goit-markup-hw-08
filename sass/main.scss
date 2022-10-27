@@ -1,1 +1,13 @@
-@import './header'
+@import './utils/variables';
+
+@import './components/header';
+@import './components/hero';
+@import './utils/section';
+@import './utils/title';
+@import './components/features';
+@import './components/activities';
+@import './components/squad';
+@import './utils/social';
+@import './components/clientele';
+@import './components/footer';
+@import './components/modal';
