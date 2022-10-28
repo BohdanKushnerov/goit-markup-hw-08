@@ -21,11 +21,11 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $secondary-text-color;
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+}
 }
 
 .contacts__icon {

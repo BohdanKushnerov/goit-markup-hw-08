@@ -18,9 +18,9 @@
   color: $primary-white-color;
   background-color: $accent-color;
   cursor: pointer;
-}
 
-.button:hover,
-.button:focus {
-  background-color: $hover-button;
+  &:hover,
+  &:focus {
+    background-color: $hover-button;
+}
 }

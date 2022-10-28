@@ -7,8 +7,9 @@
 .backdrop {
   position: fixed;
   top: 0;
-  transition: opacity var(--transition-duration) var(--transition-timing),
-    visibility var(--transition-duration) var(--transition-timing);
+  // transition: opacity var(--transition-duration) var(--transition-timing),
+  //   visibility var(--transition-duration) var(--transition-timing);
+  @include animation(all);
 
   width: 100%;
   height: 100%;
@@ -21,7 +22,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
-  transition: transform var(--transition-duration) var(--transition-timing);
+  // transition: transform var(--transition-duration) var(--transition-timing);
+  @include animation(transform);
 
   padding: 40px;
   min-height: 581px;
@@ -31,10 +33,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: $primary-white-color;
-}
 
-.backdrop.is-hidden .modal {
+  .backdrop.is-hidden & {
   transform: translate(-50%, -50%) scaleY(0);
+}
 }
 
 .button-close {
@@ -47,7 +49,8 @@
   align-items: center;
   padding: 0;
 
-  transition: fill var(--transition-duration) var(--transition-timing);
+  // transition: fill var(--transition-duration) var(--transition-timing);
+  @include animation(fill);
 
   width: 30px;
   height: 30px;
@@ -55,11 +58,11 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $primary-white-color;
   cursor: pointer;
-}
 
-.button-close:hover,
-.button-close:focus {
-  fill: $accent-color;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+}
 }
 
 .modal__title {
@@ -98,15 +101,16 @@
   height: 40px;
   padding-left: 42px;
 
-  transition: border var(--transition-duration) var(--transition-timing);
+  // transition: border var(--transition-duration) var(--transition-timing);
+  @include animation(border);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.modal__input:focus {
+  &:focus {
   outline: transparent;
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
+}
 }
 
 .modal__svg {
@@ -114,15 +118,16 @@
   top: 11px;
   left: 12px;
 
-  transition: fill var(--transition-duration) var(--transition-timing);
-}
+  // transition: fill var(--transition-duration) var(--transition-timing);
+  @include animation(fill);
 
-.modal__input:focus + .modal__svg {
+  .modal__input:focus + & {
   fill: $accent-color;
 }
 
-.modal__svg:focus {
-  fill: $accent-color;
+  &:focus {
+    fill: $accent-color;
+}
 }
 
 .modal__label-textarea {
@@ -134,24 +139,25 @@
   width: 100%;
   height: 120px;
 
-  transition: border var(--transition-duration) var(--transition-timing);
+  // transition: border var(--transition-duration) var(--transition-timing);
+  @include animation(border);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-}
 
-.modal__textarea:focus {
+  &:focus {
   outline: transparent;
   border: 1px solid $accent-color;
 }
 
-.modal__textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.71;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+}
 }
 
 .modal__label-checkbox {
@@ -176,18 +182,19 @@
   width: 16px;
   height: 15px;
 
-  transition: background-color var(--transition-duration)
-    var(--transition-timing);
+  // transition: background-color var(--transition-duration)
+  //   var(--transition-timing);
+  @include animation(background-color);
 
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid $primary-text-color;
   border-radius: 2px;
   fill: transparent;
-}
 
-.modal__input-checkbox:checked + .modal__icon-checkbox {
+  .modal__input-checkbox:checked + & {
   background-color: $accent-color;
   border-color: transparent;
   fill: $primary-white-color;
+}
 }
 
 .modal--license-agree {

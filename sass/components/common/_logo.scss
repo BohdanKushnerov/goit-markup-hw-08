@@ -8,10 +8,10 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
 
-.logo--accent,
-.logo:hover,
-.logo:focus {
-  color: $accent-color;
+  &--accent,
+  &:hover,
+  &:focus {
+    color: $accent-color;
+}
 }

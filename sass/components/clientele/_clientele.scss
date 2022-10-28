@@ -25,12 +25,12 @@
   border: 1px solid $social-networks;
   border-radius: 4px;
   color: $social-networks;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid $accent-color;
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+}
 }
 
 .clients__icon {
