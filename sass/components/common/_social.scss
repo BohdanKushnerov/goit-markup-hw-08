@@ -20,13 +20,13 @@
   height: 44px;
 
   border-radius: 50%;
-  color: var(--social-networks);
+  color: $social-networks;
 }
 
 .social__link:hover,
 .social__link:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
 }
 
 .social__link:not(:last-child) {

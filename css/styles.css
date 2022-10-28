@@ -469,12 +469,12 @@ p {
   background-color: var(--bcg-hero-footer-color);
 }
 
-.footer__content {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer__logo-address {
+.logo-address {
   margin-right: 70px;
 }
 
@@ -511,7 +511,7 @@ p {
   margin-right: 93px;
 }
 
-.footer__sub-title {
+.join-in__sub-title {
   margin-bottom: 10px;
 
   font-weight: 700;

@@ -30,7 +30,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
 }
 
 .backdrop.is-hidden .modal {
@@ -53,13 +53,13 @@
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
   cursor: pointer;
 }
 
 .button-close:hover,
 .button-close:focus {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal__title {
@@ -70,7 +70,7 @@
   line-height: 23px;
   text-align: center;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .modal__label {
@@ -85,7 +85,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .modal__input-wrap {
@@ -118,11 +118,11 @@
 }
 
 .modal__input:focus + .modal__svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal__svg:focus {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal__label-textarea {
@@ -143,7 +143,7 @@
 
 .modal__textarea:focus {
   outline: transparent;
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
 }
 
 .modal__textarea::placeholder {
@@ -164,7 +164,7 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .modal__icon-checkbox {
@@ -185,9 +185,9 @@
 }
 
 .modal__input-checkbox:checked + .modal__icon-checkbox {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-color: transparent;
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
 }
 
 .modal--license-agree {
@@ -196,7 +196,7 @@
   font-size: 14px;
   line-height: 1.71;
   text-decoration-line: underline;
-  color: var(--accent-color);
+  color: $accent-color;
   cursor: pointer;
 }
 

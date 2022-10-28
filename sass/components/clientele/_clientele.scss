@@ -20,15 +20,15 @@
   width: 170px;
   height: 92px;
 
-  border: 1px solid var(--social-networks);
+  border: 1px solid $social-networks;
   border-radius: 4px;
-  color: var(--social-networks);
+  color: $social-networks;
 }
 
 .clients__link:hover,
 .clients__link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+  border: 1px solid $accent-color;
+  color: $accent-color;
 }
 
 .clients__icon {

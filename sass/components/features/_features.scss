@@ -20,7 +20,7 @@
   height: 120px;
 
   border-radius: 4px;
-  background-color: var(--bcg-secondary-color);
+  background-color: $bcg-secondary-color;
 }
 
 .benefits__sub-title {
@@ -36,5 +36,5 @@
 .benefits__text {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }

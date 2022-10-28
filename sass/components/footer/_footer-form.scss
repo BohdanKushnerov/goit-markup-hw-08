@@ -1,0 +1,43 @@
+.subscribe__title {
+  display: block;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.45;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.subscribe__form {
+  display: flex;
+  gap: 12px;
+}
+
+.subscribe__input {
+  padding: 15px 16px;
+  min-width: 358px;
+
+  transition: border var(--transition-duration) var(--transition-timing);
+
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.subscribe__input:focus {
+  border: 1px solid $accent-color;
+}
+
+.button--secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 10px 28px;
+  min-width: 200px;
+}
