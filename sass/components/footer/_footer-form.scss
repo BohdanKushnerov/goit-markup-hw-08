@@ -19,7 +19,8 @@
   padding: 15px 16px;
   min-width: 358px;
 
-  transition: border var(--transition-duration) var(--transition-timing);
+  // transition: border var(--transition-duration) var(--transition-timing);
+  @include animation(border);
 
   outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);

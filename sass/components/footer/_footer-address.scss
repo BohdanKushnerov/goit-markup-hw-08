@@ -9,7 +9,8 @@
 }
 
 .address__link {
-  transition: color var(--transition-duration) var(--transition-timing);
+  // transition: color var(--transition-duration) var(--transition-timing);
+  @include animation();
 
   text-decoration: none;
   color: $text-footer-address-color;

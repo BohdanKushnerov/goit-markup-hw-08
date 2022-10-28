@@ -1,0 +1,3 @@
+@mixin animation($type:color, $duration:250ms, $timing:cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition: $type $duration $timing;
+}

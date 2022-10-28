@@ -11,8 +11,10 @@
 }
 
 .clients__link {
-  transition: color var(--transition-duration) var(--transition-timing),
-    border var(--transition-duration) var(--transition-timing);
+  // transition: color var(--transition-duration) var(--transition-timing),
+  //   border var(--transition-duration) var(--transition-timing);
+
+  @include animation(all);
 
   display: flex;
   justify-content: center;

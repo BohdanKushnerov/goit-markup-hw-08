@@ -25,11 +25,6 @@ p {
   width: 1px;
 }
 
-:root {
-  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-duration: 250ms;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -56,7 +51,7 @@ body {
 }
 
 .logo {
-  transition: color var(--transition-duration) var(--transition-timing);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -72,7 +67,7 @@ body {
 }
 
 .button {
-  transition: background-color var(--transition-duration) var(--transition-timing);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 10px 32px;
   min-width: 216px;
   font-family: inherit;
@@ -103,7 +98,7 @@ body {
 }
 
 .social__link {
-  transition: background-color var(--transition-duration) var(--transition-timing), color var(--transition-duration) var(--transition-timing);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +145,7 @@ body {
 
 .nav__link {
   position: relative;
-  transition: color var(--transition-duration) var(--transition-timing);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   padding: 32px 0;
   color: #212121;
@@ -189,7 +184,7 @@ body {
 }
 
 .contacts__link {
-  transition: color var(--transition-duration) var(--transition-timing);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   padding: 32px 0;
@@ -379,7 +374,7 @@ body {
 }
 
 .clients__link {
-  transition: color var(--transition-duration) var(--transition-timing), border var(--transition-duration) var(--transition-timing);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -434,7 +429,7 @@ body {
 }
 
 .social__link--gray-bcg {
-  transition: background-color var(--transition-duration) var(--transition-timing);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   background-color: #44454e;
 }
@@ -450,7 +445,7 @@ body {
 }
 
 .address__link {
-  transition: color var(--transition-duration) var(--transition-timing);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -478,7 +473,7 @@ body {
 .subscribe__input {
   padding: 15px 16px;
   min-width: 358px;
-  transition: border var(--transition-duration) var(--transition-timing);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
