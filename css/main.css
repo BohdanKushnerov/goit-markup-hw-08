@@ -665,4 +665,110 @@ body {
   padding: 10px 52px;
   min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio__filters {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.portfolio__filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio__button {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  padding: 6px 22px;
+  min-width: 73px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+  color: #212121;
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.portfolio__button:hover, .portfolio__button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
+}
+.portfolio__item:hover, .portfolio__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project {
+  text-decoration: none;
+  color: #212121;
+}
+
+.project__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__img {
+  display: block;
+  width: 100%;
+}
+
+.project__thumb-text {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+.project:hover .project__thumb-text, .project:focus .project__thumb-text {
+  transform: translateY(0);
+}
+
+.project__content {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.project__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project__works {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */

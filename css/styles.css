@@ -625,7 +625,7 @@ p {
 }
 
 /* Portfolio projects list*/
-.portfolio__projects {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
 }
