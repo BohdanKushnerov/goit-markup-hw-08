@@ -10,8 +10,6 @@
 
 .nav__link {
   position: relative;
-
-  // transition: color var(--transition-duration) var(--transition-timing);
   @include animation();
 
   display: block;

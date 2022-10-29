@@ -11,10 +11,6 @@
 }
 
 .social__link {
-  // transition: background-color var(--transition-duration)
-  //     var(--transition-timing),
-  //   color var(--transition-duration) var(--transition-timing);
-  
   @include animationTwoTypes(color, background-color);
 
   display: flex;

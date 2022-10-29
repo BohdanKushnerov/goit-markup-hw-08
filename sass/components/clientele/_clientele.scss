@@ -13,9 +13,6 @@
 }
 
 .clients__link {
-  // transition: color var(--transition-duration) var(--transition-timing),
-  //   border var(--transition-duration) var(--transition-timing);
-
   @include animationTwoTypes(color, border);
 
   display: flex;

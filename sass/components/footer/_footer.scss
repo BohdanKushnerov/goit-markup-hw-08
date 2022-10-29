@@ -35,8 +35,6 @@
 }
 
 .social__link--gray-bcg {
-  // transition: background-color var(--transition-duration)
-  //   var(--transition-timing);
   @include animation(background-color);
 
   color: $primary-white-color;

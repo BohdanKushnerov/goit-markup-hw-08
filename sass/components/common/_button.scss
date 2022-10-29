@@ -1,8 +1,4 @@
 .button {
-  // transition: background-color 
-  //   var(--transition-duration)
-  //   var(--transition-timing);
-
   @include animation(background-color);
 
   padding: 10px 32px;

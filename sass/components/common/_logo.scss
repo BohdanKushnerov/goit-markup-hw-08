@@ -1,5 +1,4 @@
 .logo {
-  // transition: color var(--transition-duration) var(--transition-timing);
   @include animation();
 
   color: $logo-black-color;

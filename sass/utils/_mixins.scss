@@ -5,7 +5,3 @@
 @mixin animationTwoTypes($type, $type-secondary, $duration:250ms, $timing:cubic-bezier(0.4, 0, 0.2, 1)) {
     transition: $type $duration $timing, $type-secondary $duration $timing;
 }
-
-// @mixin transition($type:color, $type2:border) {
-//     transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1), $type2 250ms cubic-bezier(0.4, 0, 0.2, 1),
-// }

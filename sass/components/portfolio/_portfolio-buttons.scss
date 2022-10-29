@@ -1,8 +1,4 @@
 .portfolio__button {
-  // transition: background-color var(--transition-duration)
-  //     var(--transition-timing),
-  //   color var(--transition-duration) var(--transition-timing),
-  //   box-shadow var(--transition-duration) var(--transition-timing);
   @include animationTwoTypes(color, box-shadow);
 
   display: block;
