@@ -2,8 +2,9 @@
   margin-bottom: 50px;
 }
 
-.benefits__list {
+.benefits {
   display: flex;
+
   @extend %list;
 }
 

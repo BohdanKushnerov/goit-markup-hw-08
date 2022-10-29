@@ -19,7 +19,7 @@ p {
   width: 1px;
 }
 
-.portfolio__list, .portfolio__filters, .address, .clients, .team, .app, .benefits__list, .contacts, .nav__list, .social {
+.portfolio__list, .portfolio__filters, .address, .clients, .team, .app, .benefits, .contacts, .nav__list, .social {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -59,7 +59,7 @@ body {
   line-height: 1.19;
   text-decoration: none;
 }
-.logo--accent, .logo:hover, .logo:focus {
+.logo__web--accent, .logo:hover, .logo:focus {
   color: #2196f3;
 }
 
@@ -218,7 +218,7 @@ body {
   margin-bottom: 50px;
 }
 
-.benefits__list {
+.benefits {
   display: flex;
 }
 
@@ -640,7 +640,7 @@ body {
   fill: #ffffff;
 }
 
-.modal--license-agree {
+.modal__link--license-agree {
   margin-left: 5px;
   font-size: 14px;
   line-height: 1.71;
