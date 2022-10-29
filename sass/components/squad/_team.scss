@@ -1,5 +1,7 @@
 .team {
   display: flex;
+
+  @extend %list;
 }
 
 .team__item {

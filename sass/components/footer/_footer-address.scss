@@ -2,6 +2,8 @@
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+
+  @extend %list;
 }
 
 .address__item:not(:last-child) {

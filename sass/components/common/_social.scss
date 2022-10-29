@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @extend %list;
 }
 
 .social__item:not(:last-child) {
@@ -28,10 +30,10 @@
     color: $primary-white-color;
     background-color: $accent-color;
 }
-}
 
-.social__link:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+}
 }
 
 .social__icon {

@@ -1,10 +1,18 @@
 .contacts {
   display: flex;
   margin-left: auto;
+  
+  @extend %list;
+
+  &__item + &__item {
+  margin-left: 50px;
+}
 }
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
+.contacts__icon {
+  margin-right: 10px;
+
+  fill: currentColor;
 }
 
 .contacts__link {
@@ -26,10 +34,4 @@
   &:focus {
     color: $accent-color;
 }
-}
-
-.contacts__icon {
-  margin-right: 10px;
-
-  fill: currentColor;
 }

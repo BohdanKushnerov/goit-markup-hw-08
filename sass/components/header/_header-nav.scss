@@ -1,5 +1,7 @@
 .nav__list {
   display: flex;
+  
+  @extend %list;
 }
 
 .nav__item:not(:last-child) {

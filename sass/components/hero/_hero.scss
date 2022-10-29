@@ -14,9 +14,8 @@
   background-size: cover;
   text-align: center;
   background-color: $bcg-hero-footer-color;
-}
 
-.hero__title {
+  &__title {
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 696px;
@@ -28,4 +27,5 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $primary-white-color;
+}
 }

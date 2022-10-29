@@ -4,6 +4,8 @@
 
 .clients {
   display: flex;
+
+  @extend %list;
 }
 
 .clients__item:not(:last-child) {

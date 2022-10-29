@@ -3,9 +3,10 @@
 @import './utils/hidden';
 
 @import './utils/variables';
+@import './utils/placeholders';
 
-@import './components/body';
-@import './components/container';
+@import './base/body';
+@import './base/container';
 
 @import './components/common/section';
 @import './components/common/title';

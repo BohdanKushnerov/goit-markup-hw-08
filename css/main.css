@@ -8,12 +8,6 @@ p {
   margin: 0;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .visually-hidden {
   overflow: hidden;
   position: absolute;
@@ -23,6 +17,12 @@ p {
           clip-path: inset(50%);
   height: 1px;
   width: 1px;
+}
+
+.portfolio__list, .portfolio__filters, .address, .clients, .team, .app, .benefits__list, .contacts, .nav__list, .social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 body {
@@ -106,7 +106,6 @@ body {
   color: #ffffff;
   background-color: #2196f3;
 }
-
 .social__link:not(:last-child) {
   margin-right: 10px;
 }
@@ -115,14 +114,12 @@ body {
   fill: currentColor;
 }
 
-.header__logo {
-  margin-right: 93px;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
-
+.header__logo {
+  margin-right: 93px;
+}
 .header__menu {
   display: flex;
   align-items: center;
@@ -167,9 +164,13 @@ body {
   display: flex;
   margin-left: auto;
 }
-
 .contacts__item + .contacts__item {
   margin-left: 50px;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .contacts__link {
@@ -188,11 +189,6 @@ body {
   color: #2196f3;
 }
 
-.contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
 .hero {
   padding: 200px 0;
   margin-left: auto;
@@ -205,7 +201,6 @@ body {
   text-align: center;
   background-color: #2f303a;
 }
-
 .hero__title {
   margin: 0 auto;
   margin-bottom: 30px;
@@ -303,7 +298,6 @@ body {
 .squad {
   background-color: #f5f4fa;
 }
-
 .squad__title {
   margin-bottom: 50px;
 }
@@ -385,24 +379,21 @@ body {
   color: #ffffff;
   background-color: #2f303a;
 }
-
 .footer__container {
   display: flex;
   align-items: baseline;
 }
-
-.logo-address {
-  margin-right: 70px;
-}
-
 .footer__logo {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
 }
-
 .footer__join-in {
   margin-right: 93px;
+}
+
+.logo-address {
+  margin-right: 70px;
 }
 
 .join-in__sub-title {

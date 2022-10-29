@@ -4,6 +4,7 @@
 
 .benefits__list {
   display: flex;
+  @extend %list;
 }
 
 .benefits__item:not(:last-child) {

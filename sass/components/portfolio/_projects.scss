@@ -1,6 +1,8 @@
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
+
+  @extend %list;
 }
 
 .portfolio__item {

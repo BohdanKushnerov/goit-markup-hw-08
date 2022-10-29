@@ -1,12 +1,12 @@
-.header__logo {
+.header {
+  border-bottom: 1px solid $border-bottom-hero;
+
+  &__logo {
   margin-right: 93px;
 }
 
-.header {
-  border-bottom: 1px solid $border-bottom-hero;
-}
-
-.header__menu {
+  &__menu {
   display: flex;
   align-items: center;
+}
 }

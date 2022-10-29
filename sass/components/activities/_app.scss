@@ -1,5 +1,7 @@
 .app {
   display: flex;
+
+  @extend %list;
 }
 
 .app__item:not(:last-child) {
