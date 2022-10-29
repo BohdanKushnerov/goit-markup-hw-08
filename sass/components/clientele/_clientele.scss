@@ -16,7 +16,7 @@
   // transition: color var(--transition-duration) var(--transition-timing),
   //   border var(--transition-duration) var(--transition-timing);
 
-  @include animation(all);
+  @include animationTwoTypes(color, border);
 
   display: flex;
   justify-content: center;

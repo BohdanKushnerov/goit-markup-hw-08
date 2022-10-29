@@ -9,7 +9,7 @@
   top: 0;
   // transition: opacity var(--transition-duration) var(--transition-timing),
   //   visibility var(--transition-duration) var(--transition-timing);
-  @include animation(all);
+  @include animationTwoTypes(opacity, visibility);
 
   width: 100%;
   height: 100%;
