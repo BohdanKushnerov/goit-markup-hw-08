@@ -1,8 +1,10 @@
 .button {
   @include animation(background-color);
 
-  padding: 10px 32px;
-  min-width: 216px;
+  // padding: 10px 32px;
+  // min-width: 216px;
+  padding: 10px 24px;
+  min-width: 200px;
 
   font-family: inherit;
   font-weight: 700;
@@ -14,6 +16,11 @@
   color: $primary-white-color;
   background-color: $accent-color;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+    min-width: 216px;
+  }
 
   &:hover,
   &:focus {
