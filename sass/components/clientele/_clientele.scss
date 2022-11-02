@@ -17,6 +17,7 @@
   // ЦЕ НОВЕ
   flex-wrap: wrap;
   gap: 30px;
+  flex-direction: row;
 
   @extend %list;
 }
@@ -26,8 +27,7 @@
 // }
 
 .clients__item {
-  // Не получається держать 2 колонки при менше 480px
-  width: 210px;
+  width: calc((100% - 30px) / 2);
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 3);
@@ -46,7 +46,7 @@
   align-items: center;
   // width: 170px;
   height: 92px;
-  width: 100%;
+  min-width: 100%;
 
   border: 1px solid $social-networks;
   border-radius: 4px;

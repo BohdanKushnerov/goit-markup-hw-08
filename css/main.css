@@ -258,6 +258,9 @@ body {
   gap: 30px;
 }
 
+.benefits__item {
+  max-width: 100%;
+}
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: calc((100% - 30px) / 2);
@@ -440,10 +443,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  flex-direction: row;
 }
 
 .clients__item {
-  width: 210px;
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients__item {
@@ -462,7 +466,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 92px;
-  width: 100%;
+  min-width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
