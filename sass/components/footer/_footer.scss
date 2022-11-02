@@ -5,8 +5,6 @@
   background-color: $bcg-hero-footer-color;
 
   &__container {
-  // display: flex;
-  // align-items: baseline;
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -36,8 +34,6 @@
 }
 
   &__join-in {
-  // margin-right: 93px;
-
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
@@ -56,6 +52,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    // Було 70px но справа є отступ тоді
   margin-right: 92px;
   margin-bottom: 0;
 }
