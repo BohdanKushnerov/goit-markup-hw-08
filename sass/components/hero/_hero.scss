@@ -15,7 +15,6 @@
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
     max-width: 1600px;
-    // width: 1600px;
   }
 
   background-image: linear-gradient(
@@ -24,24 +23,16 @@
     ),
     url(../images/hero-bcg.jpg);
   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   background-color: $bcg-hero-footer-color;
 
   &__title {
   margin: 0 auto;
   margin-bottom: 30px;
-  // max-width: 696px;
   max-width: 360px;
 
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // text-align: center;
-  // letter-spacing: 0.06em;
-  // text-transform: uppercase;
-  // color: $primary-white-color;
 
   font-weight: 900;
   font-size: 26px;
@@ -52,6 +43,8 @@
   color: $primary-white-color;
 
   @media screen and (min-width: 1200px) {
+    max-width: 696px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
