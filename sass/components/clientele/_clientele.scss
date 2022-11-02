@@ -1,15 +1,41 @@
 .clientele__title {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+
+  // ЦЕ НОВЕ
+    margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // ЦЕ НОВЕ
+  flex-wrap: wrap;
+  gap: 30px;
 
   @extend %list;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+// .clients__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.clients__item {
+  // Не получається держать 2 колонки при менше 480px
+  width: 210px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
@@ -18,8 +44,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  // width: 170px;
   height: 92px;
+  width: 100%;
 
   border: 1px solid $social-networks;
   border-radius: 4px;
