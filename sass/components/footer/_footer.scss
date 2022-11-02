@@ -5,8 +5,27 @@
   background-color: $bcg-hero-footer-color;
 
   &__container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    text-align: start;
+  }
 }
 
   &__logo {
@@ -17,21 +36,44 @@
 }
 
   &__join-in {
+  // margin-right: 93px;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
   margin-right: 93px;
+  margin-bottom: 0;
 }
 }
 
 .logo-address {
-  margin-right: 70px;
+  // margin-right: 70px;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  margin-right: 93px;
+  margin-bottom: 0;
+}
 }
 
 .join-in__sub-title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+  text-align: start;
+}
+  
 }
 
 .social__link--gray-bcg {
@@ -39,4 +81,5 @@
 
   color: $primary-white-color;
   background-color: $bcg-icon-footer;
+}
 }
