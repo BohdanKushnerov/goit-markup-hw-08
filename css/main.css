@@ -142,6 +142,7 @@ body {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 .header__logo {
@@ -149,7 +150,48 @@ body {
 }
 .header__menu {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.menu-botton {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-botton .icon-close {
+  display: none;
+}
+
+.menu-botton.is-open .icon-close {
+  display: block;
+}
+
+.menu-botton.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  background-color: gray;
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.menu-container.is-open {
+  display: block;
+}
+
+.nav {
+  display: none;
 }
 
 .nav__list {
@@ -188,8 +230,7 @@ body {
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
 .contacts__item + .contacts__item {
   margin-left: 50px;
