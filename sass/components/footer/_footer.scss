@@ -53,7 +53,7 @@
 
   @media screen and (min-width: 1200px) {
     // Було 70px но справа є отступ тоді
-  margin-right: 70px;
+  margin-right: 92px;
   margin-bottom: 0;
 }
 }
@@ -78,5 +78,10 @@
 
   color: $primary-white-color;
   background-color: $bcg-icon-footer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+}
 }
 }

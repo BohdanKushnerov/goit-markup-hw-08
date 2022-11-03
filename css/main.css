@@ -539,7 +539,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer .logo-address {
-    margin-right: 93px;
+    margin-right: 92px;
     margin-bottom: 0;
   }
 }
@@ -560,6 +560,9 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   background-color: #44454e;
+}
+.footer .social__link--gray-bcg:hover, .footer .social__link--gray-bcg:focus {
+  background-color: #2196f3;
 }
 
 .address {
