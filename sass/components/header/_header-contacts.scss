@@ -1,3 +1,7 @@
+.contacts-menu-links {
+  margin-left: auto;
+}
+
 .contacts {
   display: flex;
   flex-direction: column-reverse;
@@ -37,7 +41,7 @@
     padding-top: 21px;
     padding-bottom: 21px;
     width: auto;
-    margin-left: auto;
+    
 }
 
 @media screen and (min-width: 1200px) {

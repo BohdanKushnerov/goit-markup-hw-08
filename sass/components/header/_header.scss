@@ -73,6 +73,7 @@
     // Це для того об коли открите меню, як переходе на планшет було не колонкою
     @media screen and (min-width: 768px) {
     flex-direction: row;
+    overflow-y: visible;
   }
   }
 

@@ -211,6 +211,7 @@ body {
 @media screen and (min-width: 768px) {
   .menu-container.is-open {
     flex-direction: row;
+    overflow-y: visible;
   }
 }
 @media screen and (max-width: 767px) {
@@ -296,6 +297,10 @@ body {
   }
 }
 
+.contacts-menu-links {
+  margin-left: auto;
+}
+
 .contacts {
   display: flex;
   flex-direction: column-reverse;
@@ -324,7 +329,6 @@ body {
     padding-top: 21px;
     padding-bottom: 21px;
     width: auto;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
