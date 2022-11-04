@@ -198,11 +198,13 @@ body {
 .menu-container {
   display: flex;
   padding: 50px 40px;
-  width: 100%;
+  width: 100vw;
   background-color: rgb(218, 218, 218);
 }
 .menu-container.is-open {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -211,12 +213,11 @@ body {
 }
 @media screen and (max-width: 767px) {
   .menu-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
-    height: 796px;
-    width: 100%;
+    height: 100vh;
   }
 }
 
@@ -228,6 +229,12 @@ body {
 
 .nav__item:not(:last-child) {
   margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  .nav__item:not(:last-child) {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
 }
 
 .nav__link {
@@ -275,7 +282,16 @@ body {
 .contacts {
   display: flex;
   flex-direction: column-reverse;
-  margin-left: auto;
+}
+@media screen and (min-width: 767px) {
+  .contacts {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__item:not(:last-child) {
@@ -317,6 +333,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .contacts__link--font-tel {
+    margin-bottom: 32px;
     font-size: 34px;
     line-height: 1.18;
   }

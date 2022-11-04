@@ -1,6 +1,10 @@
 .nav {
   // display: none;
   // display: block;
+  @media screen and (max-width: 768px) {
+    // margin-bottom: 300px;
+    
+  }
 }
 
 .nav__list { 
@@ -13,6 +17,11 @@
 
 .nav__item:not(:last-child) {
   margin-right: 50px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
 }
 
 .nav__link {
