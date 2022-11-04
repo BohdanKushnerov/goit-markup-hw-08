@@ -8,10 +8,12 @@
 }
 
 .nav__list { 
+  margin-bottom: 50px;
   @extend %list;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-bottom: 0;
   }
 }
 

@@ -26,7 +26,7 @@ img {
   width: 1px;
 }
 
-.portfolio__list, .portfolio__filters, .address, .clients, .team, .app, .benefits, .contacts, .nav__list, .social {
+.portfolio__list, .portfolio__filters, .address, .clients, .team, .app, .benefits, .menu-list, .contacts, .nav__list, .social {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -199,16 +199,33 @@ body {
   display: flex;
   padding: 50px 40px;
   width: 100vw;
-  background-color: rgb(218, 218, 218);
+  background-color: #ffffff;
 }
 .menu-container.is-open {
+  display: block;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 768px) {
   .menu-container.is-open {
     flex-direction: row;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    max-width: 480px;
+    max-height: 796px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -216,19 +233,14 @@ body {
     padding: 0;
   }
 }
-@media screen and (max-width: 767px) {
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    height: 100vh;
-  }
-}
 
+.nav__list {
+  margin-bottom: 50px;
+}
 @media screen and (min-width: 768px) {
   .nav__list {
     display: flex;
+    margin-bottom: 0;
   }
 }
 
@@ -288,19 +300,21 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
-@media screen and (min-width: 767px) {
-  .contacts {
-    margin-left: auto;
-  }
-}
 @media screen and (max-width: 767px) {
   .contacts__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 64px;
   }
 }
 @media screen and (min-width: 768px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -313,10 +327,38 @@ body {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-direction: row;
+  }
+}
 
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (max-width: 768px) {
+  .contacts__icon {
+    display: none;
+  }
+}
+.contacts__icon--mail {
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--mail {
+    height: 12px;
+  }
+}
+.contacts__icon--phone {
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--phone {
+    height: 16px;
+  }
 }
 
 .contacts__link {
@@ -324,27 +366,65 @@ body {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
 }
-@media screen and (max-width: 768px) {
-  .contacts__link--font-mail {
-    font-size: 24px;
-    line-height: 1.17;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contacts__link--font-tel {
-    margin-bottom: 32px;
+@media screen and (max-width: 767px) {
+  .contacts__link {
     font-size: 34px;
     line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
+}
+
+.menu-list {
+  display: flex;
+  align-items: baseline;
+}
+.menu-list__item {
+  position: relative;
+}
+.menu-list__item:not(:last-child)::before {
+  position: absolute;
+  right: -11px;
+  bottom: 0;
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 22px;
+  border-radius: 2px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+.menu-list__item:not(:last-child) {
+  margin-right: 21px;
+}
+.menu-list__link {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .menu-list {
+    display: none;
+  }
 }
 
 .hero {
