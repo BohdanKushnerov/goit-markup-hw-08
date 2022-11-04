@@ -26,7 +26,7 @@
           ><span class="logo__web logo__web--accent">Web</span>Studio</a
         >
 
-        <!-- <nav class="nav">
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="./index.html"
@@ -57,44 +57,49 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul> -->
+        </ul>
 
-        <button type="button" class="menu-button" 
-        aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+        <button type="button" class="menu-open-btn">
+          <svg width="40" height="40">
             <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
+        </div>
+<div class="menu-mobile">
 
-        <div class="menu-container" id="menu-container" data-menu>
-            <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./index.html"
+        <button type="button" class="menu-close-btn">
+          <svg width="40" height="40">
+            <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+
+            <nav class="mob-nav">
+          <ul class="mob-nav__list">
+            <li class="mob-nav__item">
+              <a class="mob-nav__link mob-nav__link--current" href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+            <li class="mob-nav__item">
+              <a class="mob-nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+            <li class="mob-nav__item"><a class="mob-nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
 
         <div class="contacts-menu-links">
-          <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link--font-mail" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon contacts__icon--mail" width="16" height="12">
+          <ul class="mob-contacts">
+          <li class="mob-contacts__item">
+            <a class="mob-contacts__link contacts__link--font-mail" href="mailto:info@devstudio.com">
+              <svg class="mob-contacts__icon contacts__icon--mail" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link--font-tel" href="tel:+380961111111">
-              <svg class="contacts__icon contacts__icon--phone" width="10" height="16">
+          <li class="mob-contacts__item">
+            <a class="mob-contacts__link contacts__link--font-tel" href="tel:+380961111111">
+              <svg class="mob-contacts__icon contacts__icon--phone" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -117,8 +122,8 @@
           </li>
         </ul>
         </div>
-        </div>
-        </div>
+</div>
+        
       </div>
     </header>
 

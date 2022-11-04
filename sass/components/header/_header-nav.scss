@@ -1,29 +1,15 @@
 .nav {
-  // display: none;
-  // display: block;
-  @media screen and (max-width: 768px) {
-    // margin-bottom: 300px;
-    
-  }
+  display: none;
 }
 
-.nav__list { 
-  margin-bottom: 50px;
+.nav__list {
+  display: flex;
+  
   @extend %list;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    margin-bottom: 0;
-  }
 }
 
 .nav__item:not(:last-child) {
   margin-right: 50px;
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 32px;
-    margin-right: 0;
-  }
 }
 
 .nav__link {
@@ -31,6 +17,7 @@
   @include animation();
 
   display: block;
+  padding: 32px 0;
 
   color: $primary-text-color;
   font-weight: 500;
@@ -39,15 +26,6 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-    line-height: 1.18;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 32px 0;
-  }
-
   &--current,
   &:hover,
   &:focus {
@@ -55,10 +33,6 @@
   }
 
   &--current::after {
-
-    display: none;
-
-  @media screen and (min-width: 768px) {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -71,7 +45,4 @@
     border-radius: 2px;
     background-color: $accent-color;
 }
-}
-
-
 }

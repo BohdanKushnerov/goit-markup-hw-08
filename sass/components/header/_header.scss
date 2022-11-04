@@ -1,104 +1,13 @@
 .header {
   position: relative;
-
   border-bottom: 1px solid $border-bottom-hero;
 
   &__logo {
-
-  @media screen and (min-width:768px) {
-    margin-right: 88px;
-  }
-
-  @media screen and (min-width:768px) {
-    margin-right: 93px;
-  }
+  margin-right: 93px;
 }
 
   &__menu {
-  // display: flex;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  @media screen and (min-width: 768px) {
-    // justify-content: flex-start;
-  }
 }
-}
-
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  z-index: 1;
-
-  & .icon-close {
-    display: none;
-}
-
-  &.is-open .icon-close{
-    display: block;
-}
-
-  &.is-open .icon-menu{
-    display: none;
-}
-
-@media screen and (min-width:768px) {
-  display: none;
-}
-}
-
-.icon-close {
-  position: absolute;
-  z-index: 2;
-}
-
-.menu-container {
-  display: flex;
-  padding: 50px 40px;
-  width: 100vw;
-  
-  background-color: $primary-white-color;
-
-  &.is-open {
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    overflow-y: scroll;
-
-    // Це для того об коли открите меню, як переходе на планшет було не колонкою
-    @media screen and (min-width: 768px) {
-    flex-direction: row;
-    // І пропав скролл справа вверху
-    overflow-y: visible;
-  }
-  }
-
-  @media screen and (max-width: 767px) {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%) scaleY(1);
-
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    // height: 100%;
-    
-    width: 100%;
-    max-width: 480px;
-    max-height: 796px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 0;
-  }
 }
