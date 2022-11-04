@@ -297,8 +297,10 @@ body {
   }
 }
 
-.contacts-menu-links {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contacts-menu-links {
+    margin-left: auto;
+  }
 }
 
 .contacts {

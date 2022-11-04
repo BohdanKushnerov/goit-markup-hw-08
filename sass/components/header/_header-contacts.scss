@@ -1,5 +1,7 @@
 .contacts-menu-links {
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 
 .contacts {
