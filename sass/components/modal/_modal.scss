@@ -23,11 +23,21 @@
   @include animation(transform);
 
   padding: 40px;
-  min-height: 581px;
-  width: 528px;
+  // min-height: 581px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  // height: 581px;
+  // width: 528px;
+  height: 609px;
+  width: 450px;
+  
+  @media screen and (min-width: 1200px) {
+    height: 581px;
+    width: 528px;
+  }
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: $primary-white-color;
 
@@ -160,6 +170,13 @@
   line-height: 1.71;
   text-align: center;
   color: $secondary-text-color;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: flex-start;
+
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal__icon-checkbox {
@@ -191,6 +208,11 @@
   text-decoration-line: underline;
   color: $accent-color;
   cursor: pointer;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .button--modal {

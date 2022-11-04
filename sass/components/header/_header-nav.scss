@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+.nav__list { 
+  margin-bottom: 50px;
+=======
 .nav {
   display: none;
 }
@@ -5,6 +9,7 @@
 .nav__list {
   display: flex;
   
+>>>>>>> 5c6964929af146715d2b608ce3d24e066e74f99d
   @extend %list;
 }
 

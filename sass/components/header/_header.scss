@@ -10,4 +10,74 @@
   display: flex;
   align-items: center;
 }
+<<<<<<< HEAD
+}
+
+.menu-button-open {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
+
+.menu-button-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 40px;
+  width: 100%;
+
+  overflow-y: scroll;
+  background-color: $primary-white-color;
+
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+  }
+
+    @media screen and (min-width: 768px) {
+    padding: 0;
+    // Це для того об коли открите меню, як переходе на планшет було не колонкою
+    flex-direction: row;
+    // І пропав скролл справа вверху
+    overflow-y: visible;
+  }
+}
+
+.hidden {
+  @media screen and (max-width: 767px) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+=======
+>>>>>>> 5c6964929af146715d2b608ce3d24e066e74f99d
 }

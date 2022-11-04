@@ -1,5 +1,40 @@
 .contacts {
   display: flex;
+<<<<<<< HEAD
+  flex-direction: column-reverse;
+  @extend %list;
+
+  &__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    width: auto;
+    
+}
+
+@media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-direction: row;
+  }
+=======
   margin-left: auto;
 
   // Начав моб
@@ -10,20 +45,48 @@
   &__item + &__item {
   margin-left: 50px;
 }
+>>>>>>> 5c6964929af146715d2b608ce3d24e066e74f99d
 }
 
 .contacts__icon {
   margin-right: 10px;
 
   fill: currentColor;
+<<<<<<< HEAD
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  &--mail {
+    height: 10px;
+
+    @media screen and (min-width: 1200px) {
+    height: 12px;
+  }
+  }
+
+  &--phone {
+    height: 14px;
+
+    @media screen and (min-width: 1200px) {
+    height: 16px;
+  }
+  }
+=======
+>>>>>>> 5c6964929af146715d2b608ce3d24e066e74f99d
 }
 
 .contacts__link {
   @include animation();
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+<<<<<<< HEAD
+=======
   padding: 32px 0;
+>>>>>>> 5c6964929af146715d2b608ce3d24e066e74f99d
 
   font-weight: 500;
   font-size: 14px;
@@ -31,9 +94,72 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $secondary-text-color;
+<<<<<<< HEAD
+  
+    @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+=======
+>>>>>>> 5c6964929af146715d2b608ce3d24e066e74f99d
 
   &:hover,
   &:focus {
     color: $accent-color;
 }
+<<<<<<< HEAD
+  }
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  @extend %list;
+  
+    &__item {
+    position: relative;
+
+    &:not(:last-child)::before {
+    position: absolute;
+    right: -11px;
+    bottom: 0;
+
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);;
+  }
+
+    &:not(:last-child){
+    margin-right: 21px;
+  }
+  }
+
+  &__link {
+    display: block;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+
+  color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+=======
+>>>>>>> 5c6964929af146715d2b608ce3d24e066e74f99d
 }
