@@ -23,12 +23,12 @@
 
   display: block;
 
-  color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: $primary-text-color;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -46,7 +46,6 @@
   }
 
   &--current::after {
-
     display: none;
 
   @media screen and (min-width: 768px) {
@@ -63,6 +62,4 @@
     background-color: $accent-color;
 }
 }
-
-
 }
