@@ -39,8 +39,10 @@ body {
   background-color: #ffffff;
 }
 
-.no-scroll {
-  overflow: hidden;
+@media screen and (max-width: 767px) {
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 .container {
