@@ -1,16 +1,24 @@
 .header {
   position: relative;
+
   border-bottom: 1px solid $border-bottom-hero;
 
   &__logo {
-  margin-right: 93px;
+
+  @media screen and (min-width:768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width:768px) {
+    margin-right: 93px;
+  }
 }
 
   &__menu {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-<<<<<<< HEAD
 }
 
 .menu-button-open {
@@ -78,6 +86,4 @@
     visibility: hidden;
     pointer-events: none;
   }
-=======
->>>>>>> 5c6964929af146715d2b608ce3d24e066e74f99d
 }
