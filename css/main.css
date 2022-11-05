@@ -83,6 +83,12 @@ body {
   line-height: 1.17;
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
 
 .logo {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -92,6 +98,12 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 .logo__web--accent, .logo:hover, .logo:focus {
   color: #2196f3;
@@ -209,7 +221,6 @@ body {
   flex-direction: column;
   padding: 50px 40px;
   width: 100%;
-  overflow-y: scroll;
   background-color: #ffffff;
 }
 @media screen and (max-width: 767px) {
@@ -222,6 +233,7 @@ body {
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
   }
 }
 @media screen and (min-width: 768px) {
@@ -530,6 +542,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .benefits__sub-title {
+    text-align: center;
+  }
 }
 
 .benefits__text {
