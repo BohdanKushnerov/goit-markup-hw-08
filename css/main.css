@@ -1056,20 +1056,13 @@ body {
 
 .modal__label-checkbox {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  color: #757575;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1199px) {
   .modal__label-checkbox {
-    justify-content: flex-start;
-    font-size: 12px;
-    line-height: 1.17;
+    justify-content: center;
   }
 }
 
@@ -1089,6 +1082,19 @@ body {
   background-color: #2196f3;
   border-color: transparent;
   fill: #ffffff;
+}
+
+.modal__text-checkbox {
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  color: #757575;
+}
+@media screen and (min-width: 1199px) {
+  .modal__text-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__link--license-agree {

@@ -171,21 +171,13 @@
 
 .modal__label-checkbox {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  
   align-items: center;
   margin-bottom: 30px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  color: $secondary-text-color;
-
-  @media screen and (max-width: 1199px) {
-    justify-content: flex-start;
-
-    font-size: 12px;
-    line-height: 1.17;
+  @media screen and (min-width: 1199px) {
+    justify-content: center;
   }
 }
 
@@ -203,11 +195,23 @@
   border-radius: 2px;
   fill: transparent;
 
-  .modal__input-checkbox:checked + & {
+.modal__input-checkbox:checked + & {
   background-color: $accent-color;
   border-color: transparent;
   fill: $primary-white-color;
 }
+}
+
+.modal__text-checkbox {
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__link--license-agree {
