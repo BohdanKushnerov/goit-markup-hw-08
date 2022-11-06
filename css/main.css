@@ -230,6 +230,7 @@ body {
     height: 100vh;
     padding: 50px 40px 60px;
     overflow-y: scroll;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -519,10 +520,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .benefits__item {
-  max-width: 100%;
+  width: 100%;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
@@ -543,18 +546,8 @@ body {
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
+  max-width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .benefits__svg-container {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__svg-container {
-    width: 270px;
-  }
-}
-
 .benefits__sub-title {
   margin-bottom: 10px;
   color: #212121;
@@ -1126,8 +1119,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__filters {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__filters {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__button {

@@ -1,3 +1,27 @@
+.portfolio__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  // justify-content: center;
+
+  @extend %list;
+  // margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+// .portfolio__filter-item:not(:last-child) {
+//   margin-right: 8px;
+// }
+
 .portfolio__button {
   @include animationTwoTypes(color, box-shadow);
 

@@ -1,7 +1,3 @@
-.features__title {
-  // margin-bottom: 50px;
-}
-
 .benefits {
   display: flex;
   flex-wrap: wrap;
@@ -9,11 +5,13 @@
 
   @extend %list;
 
+  // Пробую
+  justify-content: center;
 }
 
 .benefits__item {
-  // Не обовязково 100%
-  max-width: 100%;
+  width: 100%;
+  max-width: 450px;
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
@@ -24,33 +22,27 @@
   }
 }
 
-.benefits__item:not(:last-child) {
-  // margin-right: 30px;
-  // max-width: 270px;
-  // margin-bottom: 30px;
-}
-
 .benefits__svg-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  // width: 270px;
-  // width: 450px;
-
   height: 120px;
 
   border-radius: 4px;
   background-color: $bcg-secondary-color;
 
+  max-width: 100%;
+
   @media screen and (min-width: 768px) {
-    width: 354px;
-  }
+    // width: 354px;
+    // max-width: 100%;
 
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    // width: 270px;
   }
 }
+  }
 
 .benefits__sub-title {
   margin-bottom: 10px;

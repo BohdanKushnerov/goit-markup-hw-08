@@ -1,7 +1,4 @@
 .clientele__title {
-  // margin-bottom: 50px;
-
-  // ЦЕ НОВЕ
     margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -11,20 +8,11 @@
 
 .clients {
   display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-  // ЦЕ НОВЕ
   flex-wrap: wrap;
   gap: 30px;
-  // flex-direction: row;
 
   @extend %list;
 }
-
-// .clients__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .clients__item {
   width: calc((100% - 30px) / 2);
@@ -44,7 +32,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 170px;
   height: 92px;
   min-width: 100%;
 
