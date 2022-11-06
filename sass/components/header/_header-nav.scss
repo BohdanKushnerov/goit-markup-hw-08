@@ -11,7 +11,7 @@
 .nav__item:not(:last-child) {
   margin-right: 50px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 32px;
     margin-right: 0;
   }
@@ -30,7 +30,7 @@
   text-decoration: none;
   color: $primary-text-color;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     font-size: 40px;
     line-height: 1.18;
   }

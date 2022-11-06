@@ -217,10 +217,6 @@ body {
 
 .menu-container {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 50px 40px 60px;
-  width: 100%;
   background-color: #ffffff;
 }
 @media screen and (max-width: 767px) {
@@ -233,13 +229,14 @@ body {
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
+    padding: 50px 40px 60px;
     overflow-y: scroll;
   }
 }
 @media screen and (min-width: 768px) {
   .menu-container {
-    padding: 0;
     flex-direction: row;
+    width: 100%;
     overflow-y: visible;
   }
 }
@@ -265,7 +262,7 @@ body {
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav__item:not(:last-child) {
     margin-bottom: 32px;
     margin-right: 0;
@@ -283,7 +280,7 @@ body {
   text-decoration: none;
   color: #212121;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav__link {
     font-size: 40px;
     line-height: 1.18;
@@ -324,6 +321,11 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-bottom: 64px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
@@ -343,7 +345,6 @@ body {
 @media screen and (max-width: 767px) {
   .contacts__item:not(:last-child) {
     margin-top: 32px;
-    margin-bottom: 64px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -390,24 +391,27 @@ body {
   flex-wrap: wrap;
   align-items: center;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 34px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
   .contacts__link {
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
   }
 }
 .contacts__link:hover, .contacts__link:focus {
@@ -456,22 +460,39 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 480px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-hero/hero-bcg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
   background-color: #2f303a;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-hero/hero-bcg-mob@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-hero/hero-bcg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-hero/hero-bcg-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
     max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-hero/hero-bcg-desk.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/section-hero/hero-bcg-desk@2x.jpg);
   }
 }
 .hero__title {
@@ -687,11 +708,8 @@ body {
 
 .clients {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  flex-direction: row;
 }
 
 .clients__item {

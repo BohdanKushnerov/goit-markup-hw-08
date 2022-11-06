@@ -50,11 +50,8 @@
 
 .menu-container {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  // Додав знизу більший падінг бо меню мого телефону трішки заважає посиланням на соц мережі
-  padding: 50px 40px 60px;
-  width: 100%;
+  // justify-content: space-between;
+  // flex-direction: column;
 
   background-color: $primary-white-color;
 
@@ -68,12 +65,15 @@
     justify-content: space-between;
     width: 100vw;
     height: 100vh;
+      // Додав знизу більший падінг бо меню мого телефону трішки заважає посиланням на соц мережі
+    padding: 50px 40px 60px;
     overflow-y: scroll;
   }
 
     @media screen and (min-width: 768px) {
-    padding: 0;
+    // padding: 0;
     flex-direction: row;
+    width: 100%;
     // Шоб пропав скролл справа вверху
     overflow-y: visible;
   }
