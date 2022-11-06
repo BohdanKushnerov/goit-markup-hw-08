@@ -12,7 +12,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .visually-hidden {
@@ -659,11 +658,6 @@ body {
   .team__item {
     width: calc((100% - 90px) / 4);
   }
-}
-
-.team__icon {
-  display: block;
-  width: 100%;
 }
 
 .team__info {
