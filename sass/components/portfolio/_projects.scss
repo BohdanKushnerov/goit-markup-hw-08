@@ -1,5 +1,6 @@
 .portfolio__list {
   display: flex;
+  gap: 30px;
   flex-wrap: wrap;
 
   @extend %list;
@@ -8,9 +9,20 @@
 .portfolio__item {
   @include animation(box-shadow);
 
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: calc((100% - 60px) / 3);
+  // margin-right: 30px;
+  // margin-bottom: 30px;
+
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  // width: calc((100% - 60px) / 3);
 
     &:hover,
     &:focus {
@@ -19,9 +31,9 @@
 }
 }
 
-.portfolio__item:nth-child(3n) {
-  margin-right: 0;
-}
+// .portfolio__item:nth-child(3n) {
+//   margin-right: 0;
+// }
 
 .project {
   text-decoration: none;
@@ -34,8 +46,8 @@
 }
 
 .project__img {
-  display: block;
-  width: 100%;
+  // display: block;
+  // width: 100%;
 }
 
 .project__thumb-text {

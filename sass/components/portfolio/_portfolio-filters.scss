@@ -1,11 +1,13 @@
 .portfolio__filters {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   @extend %list;
 }
 
-.portfolio__filter-item:not(:last-child) {
-  margin-right: 8px;
-}
+// .portfolio__filter-item:not(:last-child) {
+//   margin-right: 8px;
+// }
