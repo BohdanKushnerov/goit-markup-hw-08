@@ -50,8 +50,6 @@
 
 .menu-container {
   display: flex;
-  // justify-content: space-between;
-  // flex-direction: column;
 
   background-color: $primary-white-color;
 
@@ -72,10 +70,9 @@
   }
 
     @media screen and (min-width: 768px) {
-    // padding: 0;
     flex-direction: row;
     width: 100%;
-    // Шоб пропав скролл справа вверху
+    // Шоб пропав скролл справа вверху після переходу в режим планшету при откритом меню
     overflow-y: visible;
   }
 }
